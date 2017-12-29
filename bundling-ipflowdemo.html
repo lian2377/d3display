@@ -20,33 +20,43 @@
 
 .node:hover,
 .node--source,
-.node--target {
+.node--target,
+.node--dual {
   font-weight: 700;
 }
 
 .node--source {
-  fill: #2ca02c;
+  fill: #ff9912;
 }
 
 .node--target {
-  fill: #d62728;
+  fill: #2828ff;
 }
 
-.link--source,
-.link--target {
+.node--dual {
+  fill: #00aa00;
+}
+
+.link--rx,
+.link--tx,
+.link--dual {
   stroke-opacity: 1;
   stroke-width: 2px;
 }
 
-.link--source {
-  stroke: #d62728;
+.link--tx {
+  stroke: #2828ff;
 }
 
-.link--target {
-  stroke: #2ca02c;
+.link--rx {
+  stroke: #ff9912;
+}
+
+.link--dual {
+  stroke: #00aa00;
 }
 
 </style>
 <body>
 <script src="d3/d3.min.js"></script>
-<script src="bundling.js"></script>
+<script src="bundling-ipflowdemo.js"></script>
